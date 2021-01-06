@@ -1,2 +1,1 @@
-# chim-collective-website
-Chim Collective Website
+# pk-site
