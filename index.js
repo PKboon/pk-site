@@ -81,4 +81,11 @@ if ($(window).width() > 768) {
     $(".zoom-img", this).removeClass("zoom-img-animate");
     $(".btn-group", this).removeClass("btn-group-animate");
   });
+
+  $(".zoom-img").addClass("zoom-img-animate");
+  $(".btn-group").addClass("btn-group-animate");
+  $(".zoom").click(function() {
+    $(".zoom-img", this).toggleClass("zoom-img-animate");
+    $(".btn-group", this).toggleClass("btn-group-animate");
+  });
 }
