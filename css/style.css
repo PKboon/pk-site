@@ -1,4 +1,8 @@
 /* ===== Entire Document ===== */
+strong{
+  font-family: Montserrat;
+}
+
 html, body {
   background-color: #dddddd;
   width: 100%;
@@ -45,6 +49,10 @@ hr {
 
 .btn {
   border-radius: 0;
+  box-shadow: none !important;
+}
+
+.btn:focus{
   box-shadow: none !important;
 }
 
@@ -246,17 +254,16 @@ a.navbar-brand {
 
 .accordion-body {
   font-size: 1.3rem;
-  /* border: 1px solid #f05454 !important; */
   border-top: 0 !important;
   text-align: left;
 }
 
-.wedo-head {
+.about-head {
   font-size: 2.5rem;
   margin-bottom: 20px;
 }
 
-.wedo-desc-box {
+.edu-desc-box {
   font-size: 1.15rem;
   margin-top: 32px;
   padding-left: 20px;
@@ -312,21 +319,20 @@ a.navbar-brand {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, .5));
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  transform: scale(1.1);
+  transform: scale(1);
   transition: all .6s;
 }
 
 .zoom-img-animate {
-  transform: scale(1);
+  transform: scale(1.2);
 }
 
 .btn-group {
   width: 100%;
-  background-color: rgba(0, 0, 0, .5);
+  background-color: rgba(34, 40, 49, 0.9);
   position: relative;
   z-index: 1;
   transform: translateY(250px);
@@ -348,6 +354,26 @@ a.navbar-brand {
 .zoom .btn:hover {
   background-color: #f05454;
   transition: .7s;
+}
+
+.prj-card {
+  position: relative;
+}
+
+.prj-info.noshow {
+  opacity: 0;
+  transition: .3s;
+}
+
+.prj-info {
+  position: absolute;
+  transition: .3s;
+  z-index: 2;
+  background-color: rgba(34, 40, 49, 0.9);
+  padding: 5%;
+  color: #dddddd;
+  width: 100%;
+  height: calc(100% - 45px);
 }
 
 .achieved-prj-btns {
@@ -471,6 +497,14 @@ footer {
     height: 200px;
   }
 
+  .prj-info h5 {
+    font-size: 1.1rem;
+  }
+
+  .prj-info p {
+    font-size: .9rem;
+  }
+
   .btn-group {
     transform: translateY(200px);
   }
@@ -509,11 +543,11 @@ footer {
     margin-bottom: 6%;
   }
 
-  .wedo-desc-box {
+  .edu-desc-box {
     margin-top: auto;
   }
 
-  .wedo-head, .wedo-desc-box {
+  .about-head, .edu-desc-box {
     text-align: center;
   }
 
@@ -525,6 +559,19 @@ footer {
   .zoom {
     width: 245px;
     height: 175px;
+  }
+
+  .prj-info {
+    padding: 3%;
+  }
+
+  .prj-info h5 {
+    font-size: 1rem;
+  }
+
+  .prj-info p {
+    font-size: .85rem;
+    line-height: 1.3;
   }
 
   .btn-group {
@@ -540,6 +587,19 @@ footer {
   .zoom {
     width: 210px;
     height: 150px;
+  }
+
+  .prj-info {
+    padding: 1.5%;
+  }
+
+  .prj-info h5 {
+    font-size: .85rem;
+    margin: 3px;
+  }
+
+  .prj-info p {
+    font-size: .77rem;
   }
 
   .btn-group {
@@ -583,6 +643,21 @@ footer {
     height: 225px;
   }
 
+  .prj-info {
+    padding: 3%;
+    height: calc(100% - 55px);
+  }
+
+  .prj-info h5 {
+    font-size: 1.15rem;
+    margin: 5px;
+  }
+
+  .prj-info p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
   .btn-group {
     transform: translateY(225px);
   }
@@ -596,6 +671,19 @@ footer {
   .zoom {
     width: 245px;
     height: 175px;
+  }
+
+  .prj-info {
+    height: calc(100% - 45px);
+  }
+
+  .prj-info h5 {
+    font-size: 1rem;
+  }
+
+  .prj-info p {
+    font-size: .8rem;
+    line-height: 1.3;
   }
 
   .btn-group {
@@ -620,6 +708,15 @@ footer {
     height: 250px;
   }
 
+  .prj-info h5 {
+    font-size: 1.25rem;
+  }
+
+  .prj-info p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
   .btn-group {
     transform: translateY(250px);
   }
@@ -639,6 +736,15 @@ footer {
   .zoom {
     width: 245px;
     height: 175px;
+  }
+
+  .prj-info h5 {
+    font-size: 1rem;
+  }
+
+  .prj-info p {
+    font-size: .8rem;
+    line-height: 1.3;
   }
 
   .btn-group {
@@ -662,6 +768,19 @@ footer {
     height: 150px;
   }
 
+  .prj-info {
+    padding: 1.5%;
+  }
+
+  .prj-info h5 {
+    font-size: .85rem;
+    margin: 3px;
+  }
+
+  .prj-info p {
+    font-size: .77rem;
+  }
+
   .btn-group {
     transform: translateY(150px);
   }
@@ -681,6 +800,18 @@ footer {
   .zoom {
     width: 157.5px;
     height: 112.5px;
+  }
+
+  .prj-info {
+    height: calc(100% - 44px);
+  }
+
+  .prj-info h5 {
+    font-size: .68rem;
+  }
+
+  .prj-info p {
+    font-size: .45rem;
   }
 
   .btn-group {

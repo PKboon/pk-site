@@ -67,6 +67,11 @@ $("#less-prj").click(function() {
   $("#more-prj").toggleClass("achieve");
 });
 
+$(".prj-info").addClass("noshow");
+$(".prj-info-btn").hover(function() {
+  $(this).parent().parent().find(".prj-info").toggleClass("noshow");
+});
+
 if ($(window).width() > 768) {
   //TEAM SECTION
   $(".zoom").hover(function() {

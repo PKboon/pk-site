@@ -32,7 +32,9 @@
           <p>Email: pkboonpeng@gmail.com</p>
           <p>Phone: +1 987 293 2415</p>
         </div>
-        <button class="resume-btn btn head-font" type="button" name="button">RESUME</button>
+        <button onclick="window.open('https://drive.google.com/file/d/1rLNpAcZPhDcTRyCVhMfjrChmR_Q-lO_F/view?usp=sharing', '_blank'); return false;" class="resume-btn btn head-font" type="button" name="button">
+          RESUME
+        </button>
         <button class="navbar-toggler btn" type="button" data-toggle="collapse" data-target="#navbar-menus" aria-controls="navbar-menus" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fas fa-bars"></i>
         </button>
@@ -91,7 +93,7 @@
       <div class="row">
 
         <div class="col-lg-7">
-          <h3 class="wedo-head head-font" data-aos="fade-right">Experience</h3>
+          <h3 class="about-head head-font" data-aos="fade-right">Experience</h3>
           <div class="accordion" id="accordionExample" data-aos="fade-right">
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingOne">
@@ -376,8 +378,8 @@
         </div>
 
         <div class="col-lg-5">
-          <h3 class="wedo-head head-font" data-aos="fade-left">Education</h3>
-          <div class="wedo-desc-box" data-aos="fade-left">
+          <h3 class="about-head head-font" data-aos="fade-left">Education</h3>
+          <div class="edu-desc-box" data-aos="fade-left">
             <p style="margin: 0;">Expected Aug 2022</p>
             <h4>Wentworth Institute of Technology</h4>
             <h5>Bachelor of Science, Computer Science</h5>
@@ -414,183 +416,236 @@
     </div>
 
     <div class="row project-row">
-      <div class="col-md-4 col-sm-6">
+      <div class="col-md-4 col-sm-6 prj-card">
         <div class="zoom" data-aos="fade-up">
-          <div class="zoom-img" style="background-image: url('https://www.kindpng.com/picc/m/7-71145_person-cartoon-group-people-clever-girl-cartoon-character.png')"></div>
+          <div class="prj-info">
+            <h5>Thai Restaurant Website</h5>
+            <p>
+              Chim Media's client. This website provides the restaurant's story, menu, and contact infomation.
+              Users can place order via a link provided.
+            </p>
+          </div>
+          <div class="zoom-img" style="background-image: url('assets/thai-tai-eatery.png')"></div>
           <div class="btn-group">
-            <button class="btn" typr="button"><i class="fab fa-github"></i></button>
+            <!-- <button class="btn" type="button"><i class="fab fa-github"></i></button> -->
             <button class="btn" type="button"><i class="far fa-eye"></i></button>
-            <button class="btn" type="button"><i class="fas fa-info-circle"></i></button>
+            <button class="btn prj-info-btn" type="button"><i class="fas fa-info-circle"></i></button>
           </div>
         </div>
         <div class="project-desc mb-4">
-          <h4 class="project-name head-font">Jay Chorpaka</h4>
-          <h5 class="project-position">Creative Producer</h5>
+          <h4 class="project-name head-font">Thai Tai Eatery</h4>
+          <h5 class="project-position">React.js, Hook, Bootstrap, CSS</h5>
         </div>
       </div>
 
-      <div class="col-md-4 col-sm-6">
+      <div class="col-md-4 col-sm-6 prj-card">
         <div class="zoom" data-aos="fade-up">
-          <div class="zoom-img" style="background-image: url('https://www.kindpng.com/picc/m/7-71145_person-cartoon-group-people-clever-girl-cartoon-character.png')"></div>
+          <div class="prj-info">
+            <h5>Incubation Program Website</h5>
+            <p>
+              Chim Collective is run by Chim Media Inc. This website contains Chim Collective's goals,
+              colleagues, and contact infomation.
+            </p>
+          </div>
+          <div class="zoom-img" style="background-image: url('assets/chim-collective.png')"></div>
           <div class="btn-group">
-            <button class="btn" typr="button"><i class="fab fa-github"></i></button>
-            <button class="btn" type="button"><i class="far fa-eye"></i></button>
-            <button class="btn" type="button"><i class="fas fa-info-circle"></i></button>
+            <!-- <button class="btn" type="button"><i class="fab fa-github"></i></button> -->
+            <button onclick="window.open('https://chimcollective.com/', '_blank'); return false;" class="btn" type="button"><i class="far fa-eye"></i></button>
+            <button class="btn prj-info-btn" type="button"><i class="fas fa-info-circle"></i></button>
           </div>
         </div>
         <div class="project-desc mb-4">
-          <h4 class="project-name head-font">Jay Chorpaka</h4>
-          <h5 class="project-position">Creative Producer</h5>
+          <h4 class="project-name head-font">Chim Collective</h4>
+          <h5 class="project-position">HTML, CSS, JS, GCP</h5>
         </div>
       </div>
 
-      <div class="col-md-4 col-sm-6">
+      <div class="col-md-4 col-sm-6 prj-card">
         <div class="zoom" data-aos="fade-up">
-          <div class="zoom-img" style="background-image: url('https://www.kindpng.com/picc/m/7-71145_person-cartoon-group-people-clever-girl-cartoon-character.png')"></div>
+          <div class="prj-info">
+            <h5>Desktop Application</h5>
+            <p>
+              Offers 2 game options for users; X and O and Sum-of-15 (a row, a column, or a diagonal
+              line has the sum of 15). Uses TCP for connecting 2 players.
+            </p>
+          </div>
+          <div class="zoom-img" style="background-image: url('assets/ttt-sc.png')"></div>
           <div class="btn-group">
-            <button class="btn" typr="button"><i class="fab fa-github"></i></button>
+            <button onclick="window.open('https://github.com/PKboon/TicTacToe2Players', '_blank'); return false;" class="btn" type="button"><i class="fab fa-github"></i></button>
             <button class="btn" type="button"><i class="far fa-eye"></i></button>
-            <button class="btn" type="button"><i class="fas fa-info-circle"></i></button>
+            <button class="btn prj-info-btn" type="button"><i class="fas fa-info-circle"></i></button>
           </div>
         </div>
         <div class="project-desc mb-4">
-          <h4 class="project-name head-font">Jay Chorpaka</h4>
-          <h5 class="project-position">Creative Producer</h5>
+          <h4 class="project-name head-font">Tic-tac-toe (Server/Client)</h4>
+          <h5 class="project-position">Python (PyGame)</h5>
         </div>
       </div>
 
-      <div class="col-md-4 col-sm-6">
+      <div class="col-md-4 col-sm-6 prj-card">
         <div class="zoom" data-aos="fade-up">
-          <div class="zoom-img" style="background-image: url('https://www.kindpng.com/picc/m/7-71145_person-cartoon-group-people-clever-girl-cartoon-character.png')"></div>
+          <div class="prj-info">
+            <h5>Desktop Application</h5>
+            <p>
+              Storing data in <strong>.txt</strong> and <strong>.dat</strong> files.
+              Text files store data in the table. Binary files store data in balance textfiled.
+              Users can <strong>open</strong>, <strong>save</strong>, and <strong>edit</strong> the files.
+            </p>
+          </div>
+          <div class="zoom-img" style="background-image: url('assets/money-tracking.png')"></div>
           <div class="btn-group">
-            <button class="btn" typr="button"><i class="fab fa-github"></i></button>
+            <button onclick="window.open('https://github.com/PKboon/MoneyTracking', '_blank'); return false;" class="btn" type="button"><i class="fab fa-github"></i></button>
             <button class="btn" type="button"><i class="far fa-eye"></i></button>
-            <button class="btn" type="button"><i class="fas fa-info-circle"></i></button>
+            <button class="btn prj-info-btn" type="button"><i class="fas fa-info-circle"></i></button>
           </div>
         </div>
         <div class="project-desc mb-4">
-          <h4 class="project-name head-font">Jay Chorpaka</h4>
-          <h5 class="project-position">Creative Producer</h5>
+          <h4 class="project-name head-font">Money Tracking</h4>
+          <h5 class="project-position">Java (JavaFX)</h5>
         </div>
       </div>
 
-      <div class="col-md-4 col-sm-6">
+      <div class="col-md-4 col-sm-6 prj-card">
         <div class="zoom" data-aos="fade-up">
+          <div class="prj-info">
+            <h5>Website</h5>
+          </div>
           <div class="zoom-img" style="background-image: url('https://www.kindpng.com/picc/m/7-71145_person-cartoon-group-people-clever-girl-cartoon-character.png')"></div>
           <div class="btn-group">
-            <button class="btn" typr="button"><i class="fab fa-github"></i></button>
+            <button onclick="window.open('https://github.com/PKboon/VirtualJavaCertificationExamination', '_blank'); return false;" class="btn" type="button"><i class="fab fa-github"></i></button>
             <button class="btn" type="button"><i class="far fa-eye"></i></button>
-            <button class="btn" type="button"><i class="fas fa-info-circle"></i></button>
+            <button class="btn prj-info-btn" type="button"><i class="fas fa-info-circle"></i></button>
           </div>
         </div>
         <div class="project-desc mb-4">
-          <h4 class="project-name head-font">Jay Chorpaka</h4>
-          <h5 class="project-position">Creative Producer</h5>
+          <h4 class="project-name head-font">Virtual Java Certification Examination</h4>
+          <h5 class="project-position">Java (Swing), MySQL</h5>
         </div>
       </div>
 
-      <div class="col-md-4 col-sm-6">
+      <div class="col-md-4 col-sm-6 prj-card">
         <div class="zoom" data-aos="fade-up">
+          <div class="prj-info">
+            <h5>Website</h5>
+          </div>
           <div class="zoom-img" style="background-image: url('https://www.kindpng.com/picc/m/7-71145_person-cartoon-group-people-clever-girl-cartoon-character.png')"></div>
           <div class="btn-group">
-            <button class="btn" typr="button"><i class="fab fa-github"></i></button>
+            <button onclick="window.open('https://github.com/PKboon/DepreciationCalculator', '_blank'); return false;" class="btn" type="button"><i class="fab fa-github"></i></button>
             <button class="btn" type="button"><i class="far fa-eye"></i></button>
-            <button class="btn" type="button"><i class="fas fa-info-circle"></i></button>
+            <button class="btn prj-info-btn" type="button"><i class="fas fa-info-circle"></i></button>
           </div>
         </div>
         <div class="project-desc mb-4">
-          <h4 class="project-name head-font">Jay Chorpaka</h4>
-          <h5 class="project-position">Creative Producer</h5>
+          <h4 class="project-name head-font">Depreciation Calculator</h4>
+          <h5 class="project-position">Java, HTML, Apache</h5>
         </div>
       </div>
 
-      <div class="col-md-4 col-sm-6 achieved-prj">
+      <div class="col-md-4 col-sm-6 prj-card">
         <div class="zoom" data-aos="fade-up">
+          <div class="prj-info">
+            <h5>Website</h5>
+          </div>
           <div class="zoom-img" style="background-image: url('https://www.kindpng.com/picc/m/7-71145_person-cartoon-group-people-clever-girl-cartoon-character.png')"></div>
           <div class="btn-group">
-            <button class="btn" typr="button"><i class="fab fa-github"></i></button>
+            <button onclick="window.open('https://github.com/PKboon/FileFormatConversionProgram', '_blank'); return false;" class="btn" type="button"><i class="fab fa-github"></i></button>
             <button class="btn" type="button"><i class="far fa-eye"></i></button>
-            <button class="btn" type="button"><i class="fas fa-info-circle"></i></button>
+            <button class="btn prj-info-btn" type="button"><i class="fas fa-info-circle"></i></button>
           </div>
         </div>
         <div class="project-desc mb-4">
-          <h4 class="project-name head-font">Jay Chorpaka</h4>
-          <h5 class="project-position">Creative Producer</h5>
+          <h4 class="project-name head-font">File Format Conversion (CSV)</h4>
+          <h5 class="project-position">C++</h5>
         </div>
       </div>
 
-      <div class="col-md-4 col-sm-6 achieved-prj">
+      <div class="col-md-4 col-sm-6 achieved-prj prj-card prj-card">
         <div class="zoom" data-aos="fade-up">
+          <div class="prj-info">
+            <h5>Website</h5>
+          </div>
           <div class="zoom-img" style="background-image: url('https://www.kindpng.com/picc/m/7-71145_person-cartoon-group-people-clever-girl-cartoon-character.png')"></div>
           <div class="btn-group">
-            <button class="btn" typr="button"><i class="fab fa-github"></i></button>
+            <button onclick="window.open('https://github.com/PKboon/SlotMachine', '_blank'); return false;" class="btn" type="button"><i class="fab fa-github"></i></button>
             <button class="btn" type="button"><i class="far fa-eye"></i></button>
-            <button class="btn" type="button"><i class="fas fa-info-circle"></i></button>
+            <button class="btn prj-info-btn" type="button"><i class="fas fa-info-circle"></i></button>
           </div>
         </div>
         <div class="project-desc mb-4">
-          <h4 class="project-name head-font">Jay Chorpaka</h4>
-          <h5 class="project-position">Creative Producer</h5>
+          <h4 class="project-name head-font">Slot Machine</h4>
+          <h5 class="project-position">Java (JavaFX)</h5>
         </div>
       </div>
 
-      <div class="col-md-4 col-sm-6 achieved-prj">
+      <div class="col-md-4 col-sm-6 achieved-prj prj-card">
         <div class="zoom" data-aos="fade-up">
+          <div class="prj-info">
+            <h5>Website</h5>
+          </div>
           <div class="zoom-img" style="background-image: url('https://www.kindpng.com/picc/m/7-71145_person-cartoon-group-people-clever-girl-cartoon-character.png')"></div>
           <div class="btn-group">
-            <button class="btn" typr="button"><i class="fab fa-github"></i></button>
+            <button onclick="window.open('https://github.com/PKboon/GuessingNumber', '_blank'); return false;" class="btn" type="button"><i class="fab fa-github"></i></button>
             <button class="btn" type="button"><i class="far fa-eye"></i></button>
-            <button class="btn" type="button"><i class="fas fa-info-circle"></i></button>
+            <button class="btn prj-info-btn" type="button"><i class="fas fa-info-circle"></i></button>
           </div>
         </div>
         <div class="project-desc mb-4">
-          <h4 class="project-name head-font">Jay Chorpaka</h4>
-          <h5 class="project-position">Creative Producer</h5>
+          <h4 class="project-name head-font">Guessing Number</h4>
+          <h5 class="project-position">Java (JavaFX)</h5>
         </div>
       </div>
 
-      <div class="col-md-4 col-sm-6 achieved-prj">
+      <div class="col-md-4 col-sm-6 achieved-prj prj-card">
         <div class="zoom" data-aos="fade-up">
+          <div class="prj-info">
+            <h5>Website</h5>
+          </div>
           <div class="zoom-img" style="background-image: url('https://www.kindpng.com/picc/m/7-71145_person-cartoon-group-people-clever-girl-cartoon-character.png')"></div>
           <div class="btn-group">
-            <button class="btn" typr="button"><i class="fab fa-github"></i></button>
+            <button onclick="window.open('https://github.com/PKboon/PokerScoring', '_blank'); return false;" class="btn" type="button"><i class="fab fa-github"></i></button>
             <button class="btn" type="button"><i class="far fa-eye"></i></button>
-            <button class="btn" type="button"><i class="fas fa-info-circle"></i></button>
+            <button class="btn prj-info-btn" type="button"><i class="fas fa-info-circle"></i></button>
           </div>
         </div>
         <div class="project-desc mb-4">
-          <h4 class="project-name head-font">Jay Chorpaka</h4>
-          <h5 class="project-position">Creative Producer</h5>
+          <h4 class="project-name head-font">Poker Scoring</h4>
+          <h5 class="project-position">Java (JavaFX)</h5>
         </div>
       </div>
 
-      <div class="col-md-4 col-sm-6 achieved-prj">
+      <div class="col-md-4 col-sm-6 achieved-prj prj-card">
         <div class="zoom" data-aos="fade-up">
+          <div class="prj-info">
+            <h5>Website</h5>
+          </div>
           <div class="zoom-img" style="background-image: url('https://www.kindpng.com/picc/m/7-71145_person-cartoon-group-people-clever-girl-cartoon-character.png')"></div>
           <div class="btn-group">
-            <button class="btn" typr="button"><i class="fab fa-github"></i></button>
+            <button onclick="window.open('https://github.com/PKboon/TicTacToeNumber', '_blank'); return false;" class="btn" type="button"><i class="fab fa-github"></i></button>
             <button class="btn" type="button"><i class="far fa-eye"></i></button>
-            <button class="btn" type="button"><i class="fas fa-info-circle"></i></button>
+            <button class="btn prj-info-btn" type="button"><i class="fas fa-info-circle"></i></button>
           </div>
         </div>
         <div class="project-desc mb-4">
-          <h4 class="project-name head-font">Jay Chorpaka</h4>
-          <h5 class="project-position">Creative Producer</h5>
+          <h4 class="project-name head-font">Tic-tac-toe Number</h4>
+          <h5 class="project-position">Java</h5>
         </div>
       </div>
 
-      <div class="col-md-4 col-sm-6 achieved-prj">
+      <div class="col-md-4 col-sm-6 achieved-prj prj-card">
         <div class="zoom" data-aos="fade-up">
+          <div class="prj-info">
+            <h5>Website</h5>
+          </div>
           <div class="zoom-img" style="background-image: url('https://www.kindpng.com/picc/m/7-71145_person-cartoon-group-people-clever-girl-cartoon-character.png')"></div>
           <div class="btn-group">
-            <button class="btn" typr="button"><i class="fab fa-github"></i></button>
+            <button onclick="window.open('https://github.com/PKboon/PongForOne', '_blank'); return false;" class="btn" type="button"><i class="fab fa-github"></i></button>
             <button class="btn" type="button"><i class="far fa-eye"></i></button>
-            <button class="btn" type="button"><i class="fas fa-info-circle"></i></button>
+            <button class="btn prj-info-btn" type="button"><i class="fas fa-info-circle"></i></button>
           </div>
         </div>
         <div class="project-desc mb-4">
-          <h4 class="project-name head-font">Jay Chorpaka</h4>
-          <h5 class="project-position">Creative Producer</h5>
+          <h4 class="project-name head-font">Pong for One</h4>
+          <h5 class="project-position">Java (JavaFX)</h5>
         </div>
       </div>
     </div>
@@ -620,8 +675,8 @@
       </div>
 
       <div class="col-lg-2 contact-social">
-        <p><button type="button" name="button"><i class="fab fa-github"></i></button></p>
-        <p><button type="button" name="button"><i class="fab fa-linkedin-in"></i></button></p>
+        <p><button class="shadow-none" type="button" name="button" onclick="window.open('https://github.com/PKboon', '_blank'); return false;"><i class="fab fa-github"></i></button></p>
+        <p><button class="shadow-none" type="button" name="button" onclick="window.open('https://www.linkedin.com/in/pkboon/', '_blank'); return false;"><i class="fab fa-linkedin-in"></i></button></p>
       </div>
     </div>
 
@@ -639,8 +694,7 @@
   <script src="index.js" charset="utf-8"></script>
 
   <!-- Bootstrap Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
   <!-- AOS Scripts -->
