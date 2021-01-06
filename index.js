@@ -72,7 +72,7 @@ $(".prj-info-btn").hover(function() {
   $(this).parent().parent().find(".prj-info").toggleClass("noshow");
 });
 
-if ($(window).width() > 768) {
+// if ($(window).width() > 768) {
   //TEAM SECTION
   $(".zoom").hover(function() {
     $(".zoom-img", this).addClass("zoom-img-animate");
@@ -81,11 +81,11 @@ if ($(window).width() > 768) {
     $(".zoom-img", this).removeClass("zoom-img-animate");
     $(".btn-group", this).removeClass("btn-group-animate");
   });
-
-  $(".zoom-img").addClass("zoom-img-animate");
-  $(".btn-group").addClass("btn-group-animate");
-  $(".zoom").click(function() {
-    $(".zoom-img", this).toggleClass("zoom-img-animate");
-    $(".btn-group", this).toggleClass("btn-group-animate");
-  });
-}
+// 
+//   $(".zoom-img").addClass("zoom-img-animate");
+//   $(".btn-group").addClass("btn-group-animate");
+//   $(".zoom").click(function() {
+//     $(".zoom-img", this).toggleClass("zoom-img-animate");
+//     $(".btn-group", this).toggleClass("btn-group-animate");
+//   });
+// }
