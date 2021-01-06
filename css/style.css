@@ -1,5 +1,5 @@
 /* ===== Entire Document ===== */
-strong{
+strong {
   font-family: Montserrat;
 }
 
@@ -52,7 +52,7 @@ hr {
   box-shadow: none !important;
 }
 
-.btn:focus{
+.btn:focus {
   box-shadow: none !important;
 }
 
@@ -69,11 +69,11 @@ hr {
 
 .navbar {
   padding: 0;
-  -webkit-transition: all 0.6s ease;
-  -moz-transition: all 0.6s ease;
-  -o-transition: all 0.6s ease;
-  -ms-transition: all 0.6s ease;
-  transition: all 0.6s ease;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  transition: all 0.4s ease;
 }
 
 .navbar.scrolled {
@@ -84,7 +84,7 @@ hr {
 }
 
 a.navbar-brand {
-  width: 60px;
+  width: 45px;
   margin: 0;
 }
 
@@ -161,20 +161,23 @@ a.navbar-brand {
   transition: 0.7s;
 }
 
+.navbar-collapse{
+  overflow-y: scroll!important;
+}
+
 /* ===== Home Section ===== */
 #home {
   text-align: center;
-  margin-bottom: 10%;
-}
-
-.g {
-  height: 80vh;
-  background-image:
-    linear-gradient(to bottom, rgba(34, 40, 49, 0.5), rgba(221, 221, 221, 1));
+  margin-bottom: 7%;
 }
 
 .home-body {
-  padding-top: 310px;
+  background:
+    linear-gradient(to bottom, rgba(34, 40, 49, 0.5), rgba(221, 221, 221, 1));
+}
+
+.home-body .container{
+  padding: 310px 0 230px;
 }
 
 /* ===== About Section ===== */
@@ -434,23 +437,25 @@ a.navbar-brand {
 
 .contact-social button {
   font-size: 1.5rem;
+  padding: 0;
   width: 50px;
   height: 50px;
   color: #f05454;
   border: 0;
-  border-radius: 100%;
+  border-radius: 50%;
   background-color: #30475e;
-  transition: .7s;
+  transition: .5s;
+  box-shadow: none;
 }
 
 .contact-social button:hover {
   color: #30475e;
   background-color: #f05454;
-  transition: .7s;
+  transition: .5s;
 }
 
 footer {
-  color: #f05454;
+  color: #30475e;
   font-size: .8rem;
   text-align: center;
 }
@@ -515,6 +520,10 @@ footer {
 }
 
 @media (max-width: 991px) {
+  /* HOME */
+  .home-body .container{
+    padding: 250px 0 200px;
+  }
 
   /* ABOUT */
   .skill-box {
