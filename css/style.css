@@ -409,15 +409,16 @@ a.navbar-brand {
 }
 
 /* ===== CONTACT FORM PAGE =====  */
-#contact .resume-btn{
-  margin-left: 0;
+#contact .resume-btn {
+  margin-right: 0;
 }
+
 .email-form-div {
   text-align: center;
   margin-top: 10%;
 }
 
-.bottom-line{
+.bottom-line {
   margin-top: 15%;
   border-bottom: 2px solid;
   color: #f05454;
