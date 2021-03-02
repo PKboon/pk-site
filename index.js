@@ -73,15 +73,15 @@ $(".prj-info-btn").hover(function() {
 });
 
 // if ($(window).width() > 768) {
-  //TEAM SECTION
-  $(".zoom").hover(function() {
-    $(".zoom-img", this).addClass("zoom-img-animate");
-    $(".btn-group", this).addClass("btn-group-animate");
-  }, function() {
-    $(".zoom-img", this).removeClass("zoom-img-animate");
-    $(".btn-group", this).removeClass("btn-group-animate");
-  });
-// 
+//TEAM SECTION
+$(".zoom").hover(function() {
+  $(".zoom-img", this).addClass("zoom-img-animate");
+  $(".btn-group", this).addClass("btn-group-animate");
+}, function() {
+  $(".zoom-img", this).removeClass("zoom-img-animate");
+  $(".btn-group", this).removeClass("btn-group-animate");
+});
+//
 //   $(".zoom-img").addClass("zoom-img-animate");
 //   $(".btn-group").addClass("btn-group-animate");
 //   $(".zoom").click(function() {
@@ -89,3 +89,33 @@ $(".prj-info-btn").hover(function() {
 //     $(".btn-group", this).toggleClass("btn-group-animate");
 //   });
 // }
+
+$(document).ready(function() {
+  $(".sendBtn").click(function(event) {
+
+    let name = $(".name").val()
+    let email = $(".email").val()
+    let message = $(".message").val()
+    let error = $(".error")
+    error.empty()
+
+    if (name.length <= 0) {
+      event.preventDefault()
+      error.append("<label>Please enter you name.&nbsp;</label>")
+    } else {
+      error.append("")
+    }
+    if (email.length <= 0 || !email.includes('@') || !email.includes('.')) {
+      event.preventDefault()
+      error.append("<label>Please enter your email.&nbsp;</label>")
+    } else {
+      error.append("")
+    }
+    if (message.length <= 0) {
+      event.preventDefault()
+      error.append("<label>Please enter your message.</label>")
+    } else {
+      error.append("")
+    }
+  })
+})

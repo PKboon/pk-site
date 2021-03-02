@@ -1,4 +1,8 @@
 /* ===== Entire Document ===== */
+li {
+  padding-bottom: .75rem;
+}
+
 strong {
   font-family: Montserrat;
 }
@@ -161,8 +165,8 @@ a.navbar-brand {
   transition: 0.7s;
 }
 
-.navbar-collapse{
-  overflow-y: scroll!important;
+.navbar-collapse {
+  overflow-y: scroll !important;
 }
 
 /* ===== Home Section ===== */
@@ -176,7 +180,7 @@ a.navbar-brand {
     linear-gradient(to bottom, rgba(34, 40, 49, 0.5), rgba(221, 221, 221, 1));
 }
 
-.home-body .container{
+.home-body .container {
   padding: 310px 0 230px;
 }
 
@@ -337,7 +341,7 @@ a.navbar-brand {
   width: 100%;
   background-color: rgba(34, 40, 49, 0.9);
   position: relative;
-  z-index: 1;
+  z-index: 3;
   transform: translateY(250px);
   transition: all .6s;
 }
@@ -405,6 +409,22 @@ a.navbar-brand {
 }
 
 /* ===== CONTACT FORM PAGE =====  */
+.email-form-div {
+  text-align: center;
+  margin-top: 10%;
+}
+
+.bottom-line{
+  margin-top: 15%;
+  border-bottom: 2px solid;
+  color: #f05454;
+  width: 100%;
+}
+
+.contact-buttom {
+  margin-top: 30px;
+}
+
 .contact-menu-list {
   text-align: center;
 }
@@ -520,8 +540,9 @@ footer {
 }
 
 @media (max-width: 991px) {
+
   /* HOME */
-  .home-body .container{
+  .home-body .container {
     padding: 250px 0 200px;
   }
 
