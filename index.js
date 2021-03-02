@@ -118,8 +118,8 @@ $(document).ready(function() {
       error.append("")
     }
 
-    name.text()
-    email.text()
-    message.text()
+    $(".name").text()
+    $(".email").text()
+    $(".message").text()
   })
 })
