@@ -409,6 +409,9 @@ a.navbar-brand {
 }
 
 /* ===== CONTACT FORM PAGE =====  */
+#contact .resume-btn{
+  margin-left: 0;
+}
 .email-form-div {
   text-align: center;
   margin-top: 10%;
