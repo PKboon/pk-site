@@ -117,5 +117,9 @@ $(document).ready(function() {
     } else {
       error.append("")
     }
+
+    name.text()
+    email.text()
+    message.text()
   })
 })
