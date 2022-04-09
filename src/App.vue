@@ -120,6 +120,7 @@
                     </div>
                     <div class="modal-body">
                       <h4>Printing Service eCommerce Website</h4>
+                      <img class="screenshot-img" src="./assets/projects/mya-web.png" />
                       <callout title="Languages/Frameworks/Libraries" body="BootstrapVue, CSS, JS, HTML, Vue.js(, MySQL, PHP, Laravel)"></callout>
                       <callout title="Software/Tools" body="Atom, Figma"></callout>
                       <h5>About</h5>
@@ -138,7 +139,10 @@
                       The website will be hosted with <a href="https://www.hostatom.com/web-hosting/" target="_blank" class="text-red">hostatom</a>, a web hosting service in Thailand.
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-close-modal" data-bs-dismiss="modal">Close</button>
+                      <button class="btn btn-next" data-bs-target="#rnfModal" data-bs-toggle="modal" data-bs-dismiss="modal">
+                        Next:: Rice 'N FIRE
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -155,6 +159,7 @@
                     </div>
                     <div class="modal-body">
                       <h4>Restaurant Website</h4>
+                      <img class="screenshot-img" src="./assets/projects/rnf-web.png" />
                       <callout title="Languages/Frameworks/Libraries" body="Bootstrap, CSS, JS, HTML, React.js"></callout>
                       <callout title="Software/Tools" body="Atom, Github"></callout>
                       <h5>About</h5>
@@ -163,7 +168,10 @@
                       The details about the UX/UI can be view <a href="https://plita.myportfolio.com/rice-n-fier" target="_blank" class="text-red">here</a>.
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-close-modal" data-bs-dismiss="modal">Close</button>
+                      <button class="btn btn-next" data-bs-target="#tteModal" data-bs-toggle="modal" data-bs-dismiss="modal">
+                        Next:: Thai Tai Eatery
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -180,6 +188,7 @@
                     </div>
                     <div class="modal-body">
                       <h4>Restaurant Website</h4>
+                      <img class="screenshot-img" src="./assets/projects/tte-web.png" />
                       <callout title="Languages/Frameworks/Libraries" body="Bootstrap, CSS, JS, HTML, React.js"></callout>
                       <callout title="Software/Tools" body="Atom, Github"></callout>
                       <h5>About</h5>
@@ -192,7 +201,10 @@
                       I was nervous about the button because it was designed to have colors changed. And that was when I knew how much I could make use of CSS.
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-close-modal" data-bs-dismiss="modal">Close</button>
+                      <button class="btn btn-next" data-bs-target="#dvsModal" data-bs-toggle="modal" data-bs-dismiss="modal">
+                        Next:: Diversion
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -209,6 +221,7 @@
                     </div>
                     <div class="modal-body">
                       <h4>Newsletter Template</h4>
+                      <img class="screenshot-img" src="./assets/projects/dvs-web.png" />
                       <callout title="Languages/Frameworks/Libraries" body="CSS, HTML"></callout>
                       <callout title="Software/Tools" body="Atom, Illustrator, Photoshop"></callout>
                       <h5>About</h5>
@@ -224,7 +237,10 @@
                       I researched by inpecting websites, and found out the <code>float</code> was really useful.
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-close-modal" data-bs-dismiss="modal">Close</button>
+                      <button class="btn btn-next" data-bs-target="#dtModal" data-bs-toggle="modal" data-bs-dismiss="modal">
+                        Next:: Disney Tracker
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -241,22 +257,39 @@
                     </div>
                     <div class="modal-body">
                       <h4>Senior Project</h4>
+                      <img class="screenshot-img" src="./assets/projects/dt-web.png" />
                       <callout title="Languages/Frameworks/Libraries" body="Bootstrap, CSS, HTML, JS, Vue.js, djangoRESTframework, Python, MongoDB, CronJobs"></callout>
                       <callout title="Software/Tools" body="Illustrator, MongoDBcompass, Photoshop, Postman, VScode"></callout>
                       <h5>About</h5>
-                      A newsletter template for <a href="https://www.diversion-th.com/" target="_blank" class="text-red">Diversion</a>, a film production company in Thailand.
+                      This is an acedamic project that I was a apart of for Senior Project class at Wentworth Institute of Technology.
+                      My teammates were <a href="https://www.linkedin.com/in/tania-sajjad/" target="_blank" class="text-red">Tania Sajjad</a> and <a href="https://www.linkedin.com/in/christina-cota/" target="_blank" class="text-red">Christina Cota</a>.
+                      I worked on UI/UX, front-end, back-end, and presentation slides.
                       <br/><br/>
-                      I made <a href="https://drive.google.com/drive/folders/10c6OTJjVD2NPgxyZ0RmNpL8IjLOUbeWY?usp=sharing" target="_blank" class="text-red">3 wireframes</a>
-                      fisrt, to see which directions the client would like to go for. The client liked the option 3 the most, and also would like to add a movie poster
-                      for each movie as well. It was pretty challenging to do that because they would like to keep the screenshot full-width.
-                      However, I made it into <a href="https://drive.google.com/drive/folders/1izs1p2lGT0Yv21CRgSxj5GxtgDLYZM0z?usp=sharing" target="_blank" class="text-red">3 designs</a>.
-                      And this is the <a href="https://drive.google.com/file/d/1jVba8BoZjsv0Xs7AapcNgPS0eCtpoJtW/view?usp=sharing" target="_blank" class="text-red">final design</a>.
+                      Please feel free to see our
+                      <a href="https://docs.google.com/document/d/1bfIqvholsbZa6Dy9LRMsRKz-ACRw5Yna9cGUy_U46bA/edit?usp=sharing" target="_blank" class="text-red">Design Document</a>,
+                      <a href="https://drive.google.com/file/d/1kzWZ_Ele_-pKoelPEAzbSaHt49SUsP9A/view?usp=sharing" target="_blank" class="text-red">Poster</a>,
+                      <a href="https://docs.google.com/document/d/1lTU6UQ5akRZGiAfZceIQ489Ji-bibxGx/edit?usp=sharing&ouid=101756057652294133286&rtpof=true&sd=true" target="_blank" class="text-red">Report</a>,
+                      and <a href="https://docs.google.com/presentation/d/1jKLCxpJN7QVGEYajOGM62GVDmUq1xkN2hcFDUTYhxoU/edit?usp=sharing" target="_blank" class="text-red">Final Slide</a>.
                       <br/><br/>
-                      The thing the I most worried about is inline CSS. The newsletter will be view mostly on phone, but the <code>@media</code> cannot be used.
-                      I researched by inpecting websites, and found out the <code>float</code> was really useful.
+                      Below is a flowchart showing how front-end, back-end, and server work together on the project.
+                      <br/>
+                      <img class="screenshot-img" src="./assets/projects/dt-poster.png" />
+                      <br/><br/>
+                      Disney Tracker obtains ride information from <a href="https://github.com/scaratozzolo/MouseTools" class="text-red">MouseTools APIs</a> and <b>INSERT</b> it into the database.
+                      The website then sends <b>GET</b> requests for the data and the users can now see the wait times and ride names.
+                      <br/><br/>
+                      After the users <b>INPUT</b> us their phone numbers, desired rides and notification time, and the date range that they will be in WDW and submit it,
+                      the website will send a <b>POST</b> request to store the user's data in the database.
+                      <br/><br/>
+                      If the user's data is successfully go to the database, the app will <b>QUERY</b> the data from the database and send an <b>SMS</b> register confirmation to the users.
+                      Then, with <b>CronJobs</b>, the users will receive notification text messages about their desired ride, and rides suggestion (if they opt-in)
+                      every their selected-alert time.
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-close-modal" data-bs-dismiss="modal">Close</button>
+                      <button class="btn btn-next" data-bs-target="#myaModal" data-bs-toggle="modal" data-bs-dismiss="modal">
+                        First:: MyArt Studio
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -420,7 +453,7 @@ export default {
       }
     },
     setPaddingTopExprSection() {
-      let exprContentHeight = document.getElementById("exprContentId").offsetHeight - 60
+      let exprContentHeight = document.getElementById("exprContentId").offsetHeight-70
       if (window.innerWidth > 500) {
         document.getElementById("exprContentWrapperId").style.paddingTop = 'calc((100vh - ' + exprContentHeight + 'px) / 2)'
       } else {
@@ -428,7 +461,7 @@ export default {
       }
     },
     setPaddingTopProjSection() {
-      let projContentHeight = document.getElementById("projContentId").offsetHeight - 60
+      let projContentHeight = document.getElementById("projContentId").offsetHeight-50
       if (window.innerWidth > 500) {
         document.getElementById("projContentWrapperId").style.paddingTop = 'calc((100vh - ' + projContentHeight + 'px) / 2)'
       } else {
@@ -436,7 +469,7 @@ export default {
       }
     },
     setPaddingTopContSection() {
-      let contContentHeight = document.getElementById("contContentId").offsetHeight - 50
+      let contContentHeight = document.getElementById("contContentId").offsetHeight-70
       if (window.innerWidth > 500) {
         document.getElementById("contContentWrapperId").style.paddingTop = 'calc((100vh - ' + contContentHeight + 'px) / 2)'
       } else {
@@ -525,8 +558,12 @@ input[type="radio"]:checked+label{color: var(--red);}
 .proj-content-div .row .col-6{margin-top:20px;}
 .proj-content-div .row img{border:3px #000 solid;width:100%;}
 .proj-content-div .row img:hover{box-shadow:10px 10px var(--red);}
-.proj-content-div .modal .btn{background-color:var(--red);border-radius:0;color:#fff;}
-.proj-content-div .modal .btn:hover{box-shadow:3px 3px #000;}
+.proj-content-div .row .screenshot-img{border:0;}
+.proj-content-div .row .screenshot-img:hover{box-shadow:none;}
+.proj-content-div .modal .btn-next{background-color:var(--red);border-radius:0;color:#fff;}
+.proj-content-div .modal .btn-next:hover{box-shadow:3px 3px #000;}
+.proj-content-div .modal .btn-close-modal{background-color:var(--footer-color);border-radius:0;color:#000;}
+.proj-content-div .modal .btn-close-modal:hover{box-shadow:3px 3px #000;}
 
 .footer-div{padding:10px 0;background-color:var(--footer-color);margin-top:125px;}
 
