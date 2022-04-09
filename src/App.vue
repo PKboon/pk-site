@@ -453,7 +453,7 @@ export default {
       }
     },
     setPaddingTopExprSection() {
-      let exprContentHeight = document.getElementById("exprContentId").offsetHeight-70
+      let exprContentHeight = document.getElementById("exprContentId").offsetHeight
       if (window.innerWidth > 500) {
         document.getElementById("exprContentWrapperId").style.paddingTop = 'calc((100vh - ' + exprContentHeight + 'px) / 2)'
       } else {
@@ -461,7 +461,7 @@ export default {
       }
     },
     setPaddingTopProjSection() {
-      let projContentHeight = document.getElementById("projContentId").offsetHeight-50
+      let projContentHeight = document.getElementById("projContentId").offsetHeight
       if (window.innerWidth > 500) {
         document.getElementById("projContentWrapperId").style.paddingTop = 'calc((100vh - ' + projContentHeight + 'px) / 2)'
       } else {
@@ -469,7 +469,7 @@ export default {
       }
     },
     setPaddingTopContSection() {
-      let contContentHeight = document.getElementById("contContentId").offsetHeight-70
+      let contContentHeight = document.getElementById("contContentId").offsetHeight
       if (window.innerWidth > 500) {
         document.getElementById("contContentWrapperId").style.paddingTop = 'calc((100vh - ' + contContentHeight + 'px) / 2)'
       } else {
