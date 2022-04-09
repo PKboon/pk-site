@@ -295,7 +295,6 @@
                 </div>
               </div>
             </div>
-            <!-- <div class="col-lg-3 col-md-4 col-sm-6 col-6"><a href="https://drive.google.com/file/d/1PjsnMxqgxNOKZtK_r_eN0Wh48q1RqPQP/view?usp=sharing" target="_blank"><img src="./assets/projects/dt.png" /></a></div> -->
           </div>
         </div>
       </div>
@@ -453,7 +452,7 @@ export default {
       }
     },
     setPaddingTopExprSection() {
-      let exprContentHeight = document.getElementById("exprContentId").offsetHeight
+      let exprContentHeight = document.getElementById("exprContentId").offsetHeight-50
       if (window.innerWidth > 500) {
         document.getElementById("exprContentWrapperId").style.paddingTop = 'calc((100vh - ' + exprContentHeight + 'px) / 2)'
       } else {
@@ -461,15 +460,14 @@ export default {
       }
     },
     setPaddingTopProjSection() {
-      let projContentHeight = document.getElementById("projContentId").offsetHeight
       if (window.innerWidth > 500) {
-        document.getElementById("projContentWrapperId").style.paddingTop = 'calc((100vh - ' + projContentHeight + 'px) / 2)'
+        document.getElementById("projContentWrapperId").style.paddingTop = 'calc((100vh - 550px) / 2)'
       } else {
         document.getElementById("projContentWrapperId").style.paddingTop = '70px'
       }
     },
     setPaddingTopContSection() {
-      let contContentHeight = document.getElementById("contContentId").offsetHeight
+      let contContentHeight = document.getElementById("contContentId").offsetHeight-40
       if (window.innerWidth > 500) {
         document.getElementById("contContentWrapperId").style.paddingTop = 'calc((100vh - ' + contContentHeight + 'px) / 2)'
       } else {
