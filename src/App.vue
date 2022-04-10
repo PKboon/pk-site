@@ -26,6 +26,7 @@
       </div>
       <div>
         <a href="#proj" class="nav-menu-item">Projects</a>
+        <a href="#arts" class="nav-menu-item">Arts</a>
         <a href="#cont" class="nav-menu-item">Contact</a>
       </div>
     </div>
@@ -253,7 +254,7 @@
                 <div class="modal-dialog modal-dialog-scrollable">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h3 class="modal-title" id="dtModalLabel">Disney Tracker <span class="badge bg-success"><a href="https://drive.google.com/file/d/1PjsnMxqgxNOKZtK_r_eN0Wh48q1RqPQP/view?usp=sharing" target="_blank">View Video</a></span></h3>
+                      <h3 class="modal-title" id="dtModalLabel">Disney Tracker <span class="badge bg-success"><a href="https://drive.google.com/file/d/1PjsnMxqgxNOKZtK_r_eN0Wh48q1RqPQP/view?usp=sharing" target="_blank">Watch Video</a></span></h3>
                     </div>
                     <div class="modal-body">
                       <h4>Senior Project</h4>
@@ -287,8 +288,270 @@
                     </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-close-modal" data-bs-dismiss="modal">Close</button>
-                      <button class="btn btn-next" data-bs-target="#myaModal" data-bs-toggle="modal" data-bs-dismiss="modal">
-                        First:: MyArt Studio
+                      <button class="btn btn-next" data-bs-target="#iwtModal" data-bs-toggle="modal" data-bs-dismiss="modal">
+                        Next:: I Want To
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="arts" class="container section-div arts-section-div">
+    <div id="artsContentWrapperId">
+      <div id="artsContentId">
+        <div class="font-bold font-size-48">Arts</div>
+        <div class="arts-content-div">
+          <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+              <a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#iwtModal"><img src="./assets/projects/iwt.png" /></a>
+
+              <div class="modal fade" id="iwtModal" tabindex="-1" aria-labelledby="iwtModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h3 class="modal-title" id="iwtModalLabel">I Want To... <span class="badge bg-success"><a href="https://www.viddsee.com/video/i-want-to/cli40" target="_blank">Watch Movie</a></span></h3>
+                    </div>
+                    <div class="modal-body">
+                      <h4>Short Movie</h4>
+                      <img class="screenshot-img" src="./assets/projects/iwt-poster.jpeg" />
+                      <callout title="Synopsis" body="In a psychology interview, Pin and Pie, two girls that used to be friend, had revealed their complicated relationship."></callout>
+                      <h5>About</h5>
+                      This is my thesis movie when I was a film student at Silpakorn University, Thailand.
+                      It was really fun to make this movie from the beginning to the end.
+                      I am very grateful for my crew, actresses, actors, and advisors.
+                      <br/><br/>
+                      This is my last movie. Please feel free to enjot it. The link is in the <span class="text-success">green badge</span> above.
+                      <br/><br/>
+                      <img class="screenshot-img" src="./assets/projects/iwt-cap.png" />
+                      <br/><br/>
+                      <h5>Inspirations</h5>
+                      <ul>
+                        <li>
+                          I went to an all-girls school and I knew people who got confused about their sexualities becuase they had feelings for girls.
+                          Some people cannot accepted who they were and grappled with it.
+                        </li>
+                        <br/>
+                        <li>
+                          An <a href="https://www.nytimes.com/2015/01/09/style/no-37-big-wedding-or-small.html" class="text-red">article</a>
+                          about two strangers falling in love with each other after asking/answering certains questions.
+                          The article also report that if the two people know each other already, these questions will make them love each other even more.
+                        </li>
+                      </ul>
+                      However, it is highly likely that the one who cannot accept who they are would want to do this interview with the girl that she is in love with.
+                      So, I adapted it into a psychology interview, to make more sense of the situation.
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-close-modal" data-bs-dismiss="modal">Close</button>
+                      <button class="btn btn-next" data-bs-target="#dr6Modal" data-bs-toggle="modal" data-bs-dismiss="modal">
+                        Next:: Drawing6
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+              <a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#dr6Modal"><img src="./assets/projects/dr6.png" /></a>
+
+              <div class="modal fade" id="dr6Modal" tabindex="-1" aria-labelledby="dr6ModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h3 class="modal-title" id="dr6ModalLabel">Drawing 6</h3>
+                    </div>
+                    <div class="modal-body">
+                      <h4>Pencil Drawing</h4>
+                      <img class="screenshot-img" src="./assets/projects/dr6-pic.png" />
+                      <br/>
+                      <callout body="Drawing class by Prof. Katie Wild at BHCC" />
+                      <h5>About</h5>
+                      This is my final project of a drawing class at BHCC. Tributes to
+                      <a href="https://en.wikipedia.org/wiki/Hand_with_Reflecting_Sphere" class="text-red">M.C. Escher, 'Hand with Reflecting Sphere'</a>.
+                      <br/><br/>
+                      The professor would let us pick one of the provided marter piece arts.
+                      Then, we had to interpret it and create a piece of art that tributes the one that we chose.
+                      <br/><br/>
+                      I interpret the M.C. Escher's that he is showing his room with the reflecting sphere. It is like he is representing his life.
+                      That makes me think about how people represent themselves these day, through social media. So I change the sphere to a phone
+                      that showing my instagram, that shows people my lifestyle and things that I like.
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-close-modal" data-bs-dismiss="modal">Close</button>
+                      <button class="btn btn-next" data-bs-target="#dr5Modal" data-bs-toggle="modal" data-bs-dismiss="modal">
+                        Next:: Drawing5
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+              <a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#dr5Modal"><img src="./assets/projects/dr5.png" /></a>
+
+              <div class="modal fade" id="dr5Modal" tabindex="-1" aria-labelledby="dr5ModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h3 class="modal-title" id="dr5ModalLabel">Drawing 5</h3>
+                    </div>
+                    <div class="modal-body">
+                      <h4>Prismacolor Pencil Drawing and Collage Artwork</h4>
+                      <img class="screenshot-img" src="./assets/projects/dr5-pic.png" />
+                      <br/>
+                      <callout body="Drawing class by Prof. Katie Wild at BHCC" />
+                      <h5>About</h5>
+                      Value Studies of Hands in Prismacolor Pencils (Each hand is a letter. Left-to-right order; C A N D Y).
+                      <br/><br/>
+                      My first time drawing hands. It was pretty fun and challenging. The most challenging part was that
+                      I finished drawing the hands and started filling the background. However, it did not go well because
+                      the focal point was not the hands anymore. So, I decided I make it to a collage.
+                      <br/><br/>
+                      So glad that I went with CANDY. They were so yummy!
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-close-modal" data-bs-dismiss="modal">Close</button>
+                      <button class="btn btn-next" data-bs-target="#dr4Modal" data-bs-toggle="modal" data-bs-dismiss="modal">
+                        Next:: Drawing4
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+              <a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#dr4Modal"><img src="./assets/projects/dr4.png" /></a>
+
+              <div class="modal fade" id="dr4Modal" tabindex="-1" aria-labelledby="dr4ModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h3 class="modal-title" id="dr4ModalLabel">Drawing 4</h3>
+                    </div>
+                    <div class="modal-body">
+                      <h4>Pencil Drawing</h4>
+                      <img class="screenshot-img" src="./assets/projects/dr4-pic.png" />
+                      <br/>
+                      <callout body="Drawing class by Prof. Katie Wild at BHCC" />
+                      <h5>About</h5>
+                      I like this one the most. It was really fun to draw. I Spent 10 hours on it.
+                      <br/><br/>
+                      The professor let us pick one of the stuff that she brought to the class.
+                      I selected a game controller because it has a dark color, which has a high contrast with the background.
+                      <br/><br/>
+                      The part that I like the most is that I had to draw it into 9 chanels and chanels must not merge.
+                      So, my plan was, the middle and conner chanels would be filled with the object (the controller),
+                      and the rest channels will have more portion of background (white space).
+                      <br/><br/>
+                      However, that was a wrong move XD. I should have done it in the opposite way for the non-middle chanels
+                      so that the corner chanels would be diagonal white space. Anyway, it came out good!
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-close-modal" data-bs-dismiss="modal">Close</button>
+                      <button class="btn btn-next" data-bs-target="#dr3Modal" data-bs-toggle="modal" data-bs-dismiss="modal">
+                        Next:: Drawing3
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+              <a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#dr3Modal"><img src="./assets/projects/dr3.png" /></a>
+
+              <div class="modal fade" id="dr3Modal" tabindex="-1" aria-labelledby="dr3ModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h3 class="modal-title" id="dr3ModalLabel">Drawing 3</h3>
+                    </div>
+                    <div class="modal-body">
+                      <h4>Pencil Drawing</h4>
+                      <img class="screenshot-img" src="./assets/projects/dr3-pic.png" />
+                      <br/>
+                      <callout body="Drawing class by Prof. Katie Wild at BHCC" />
+                      <h5>About</h5>
+                      From the left: bananas, purple yams, apple, tomato, korean melon.
+                      <br/><br/>
+                      At first, there was no apple, but it looks so empty at the top. So, I just randomly drew an apple
+                      from my imagination. That is why it looks a little odd.
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-close-modal" data-bs-dismiss="modal">Close</button>
+                      <button class="btn btn-next" data-bs-target="#dr2Modal" data-bs-toggle="modal" data-bs-dismiss="modal">
+                        Next:: Drawing2
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+              <a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#dr2Modal"><img src="./assets/projects/dr2.png" /></a>
+
+              <div class="modal fade" id="dr2Modal" tabindex="-1" aria-labelledby="dr2ModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h3 class="modal-title" id="dr2ModalLabel">Drawing 2</h3>
+                    </div>
+                    <div class="modal-body">
+                      <h4>Pencil Drawing</h4>
+                      <img class="screenshot-img" src="./assets/projects/dr2-pic.png" />
+                      <br/>
+                      <callout body="Drawing class by Prof. Katie Wild at BHCC" />
+                      <h5>About</h5>
+                      Bill drawing, first assignment in the class. Drawing bills is the last thing that I would do, because
+                      there are too many details on any bills. That is why I folded it in the way that would show
+                      as less details as possible XD.
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-close-modal" data-bs-dismiss="modal">Close</button>
+                      <button class="btn btn-next" data-bs-target="#dr1Modal" data-bs-toggle="modal" data-bs-dismiss="modal">
+                        Next:: Drawing1
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+              <a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#dr1Modal"><img src="./assets/projects/dr1.png" /></a>
+
+              <div class="modal fade" id="dr1Modal" tabindex="-1" aria-labelledby="dr1ModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h3 class="modal-title" id="dr1ModalLabel">Drawing 1</h3>
+                    </div>
+                    <div class="modal-body">
+                      <h4>Pencil Drawing</h4>
+                      <img class="screenshot-img" src="./assets/projects/dr1-pic-1.png" />
+                      <br/>
+                      <callout body="Drawing class by Prof. Chaicharn Thavaravej at Silpakorn University" />
+                      <h5>About</h5>
+                      This is the final project of the class. The professor would let us choose a movie and draw
+                      a poster. Before starting the work, we had to draw four drafts of different compositions as shown below.
+                      <br/><br/>
+                      <img class="screenshot-img" src="./assets/projects/dr1-pic-2.png" />
+                      <br/><br/>
+                      <ul>
+                        <li>Top left: l position</li>
+                        <li>Top right: upside down T position</li>
+                        <li>Bottom left: S position</li>
+                        <li>Bottom right: window position</li>
+                      </ul>
+                      I decided to go with the <b>l position</b> because it is simple but speaks the most.
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-close-modal" data-bs-dismiss="modal">Close</button>
+                      <button class="btn btn-next" data-bs-target="#iwtModal" data-bs-toggle="modal" data-bs-dismiss="modal">
+                        First:: I Want To...
                       </button>
                     </div>
                   </div>
@@ -466,6 +729,14 @@ export default {
         document.getElementById("projContentWrapperId").style.paddingTop = '70px'
       }
     },
+    setPaddingTopArtsSection() {
+      // let artsContentHeight = document.getElementById("artsContentId").offsetHeight
+      if (window.innerWidth > 500) {
+        document.getElementById("artsContentWrapperId").style.paddingTop = 'calc((100vh - 550px) / 2)'
+      } else {
+        document.getElementById("artsContentWrapperId").style.paddingTop = '70px'
+      }
+    },
     setPaddingTopContSection() {
       let contContentHeight = document.getElementById("contContentId").offsetHeight-40
       if (window.innerWidth > 500) {
@@ -481,6 +752,7 @@ export default {
       this.setPaddingTopExprSection()
       this.setPaddingTopProjSection()
       this.setPaddingTopContSection()
+      this.setPaddingTopArtsSection()
     }
   },
   mounted() {
@@ -508,6 +780,7 @@ body{font-family: 'Tomorrow', sans-serif;background-color:var(--bg-color);}
 .font-size-72{font-size:72px;}
 .text-red{color: var(--red);}
 .badge{font-weight:400;position:relative;top:-10px;font-size:12px;border-radius:0 20px 20px 0;padding:2px 10px 4px 5px;}
+.badge.bg-success:hover{box-shadow:2px 3px #000;cursor:pointer;}
 .badge.bg-success a{color:#fff;}
 .badge.bg-success a:hover{text-decoration:none;}
 .section-div{height:100vh;align-items:center;}
@@ -523,9 +796,9 @@ input[type="radio"]:checked+label{color: var(--red);}
 
 .nav-div{width:100%;padding:10px 0 30px 25px;z-index:2;align-items:center;background: rgb(254,246,246);background: linear-gradient(180deg, rgba(254,246,246,1) 60%, rgba(254,246,246,0) 100%);}
 .nav-menu-div{align-items:center;display: flex;margin-top: -25px;}
-.logo{color:var(--red);text-shadow:2px 2px black;margin-right:50px;}
+.logo{color:var(--red);text-shadow:2px 2px black;margin-right:30px;}
 .logo:hover{color:#000;text-shadow:5px 5px var(--red);}
-.nav-menu-item{margin-right:50px;margin-top:-25px;}
+.nav-menu-item{margin-right:30px;margin-top:-25px;}
 
 .home-section-div .highlighted-text{color:var(--red);text-shadow:2px 2px black;}
 
@@ -544,6 +817,18 @@ input[type="radio"]:checked+label{color: var(--red);}
 .company-list li{white-space: nowrap;}
 .company-list label:hover{cursor: pointer;}
 
+.arts-content-div ul{padding-left:0;}
+.arts-content-div .row>*, .proj-content-div .row>*{padding:0;}
+.arts-content-div .row .col-6, .proj-content-div .row .col-6{margin-top:20px;}
+.arts-content-div .row img, .proj-content-div .row img{border:3px #000 solid;width:100%;}
+.arts-content-div .row img:hover, .proj-content-div .row img:hover{box-shadow:10px 10px var(--red);}
+.arts-content-div .row .screenshot-img, .proj-content-div .row .screenshot-img{border:0;}
+.arts-content-div .row .screenshot-img:hover, .proj-content-div .row .screenshot-img:hover{box-shadow:none;}
+.arts-content-div .modal .btn-next, .proj-content-div .modal .btn-next{background-color:var(--red);border-radius:0;color:#fff;}
+.arts-content-div .modal .btn-next:hover, .proj-content-div .modal .btn-next:hover{box-shadow:3px 3px #000;}
+.arts-content-div .modal .btn-close-modal, .proj-content-div .modal .btn-close-modal{background-color:var(--footer-color);border-radius:0;color:#000;}
+.arts-content-div .modal .btn-close-modal:hover, .proj-content-div .modal .btn-close-modal:hover{box-shadow:3px 3px #000;}
+
 .cont-content-div{display:flex;margin-top:15px;}
 .sub-cont-content-div{white-space:nowrap;padding-top:10px;}
 .cont-arrows-span{position:relative;top:-3px;margin-left:10px;}
@@ -552,16 +837,6 @@ input[type="radio"]:checked+label{color: var(--red);}
 .input-cont-div .form-floating .form-control:focus, .input-cont-div .form-floating .form-control:hover{box-shadow:5px 5px var(--red);}
 .input-cont-div .btn{background-color:var(--red);width:100%;border-radius:0;padding:10px 0;color:#fff;}
 .input-cont-div .btn:hover{box-shadow:5px 5px #000;}
-
-.proj-content-div .row .col-6{margin-top:20px;}
-.proj-content-div .row img{border:3px #000 solid;width:100%;}
-.proj-content-div .row img:hover{box-shadow:10px 10px var(--red);}
-.proj-content-div .row .screenshot-img{border:0;}
-.proj-content-div .row .screenshot-img:hover{box-shadow:none;}
-.proj-content-div .modal .btn-next{background-color:var(--red);border-radius:0;color:#fff;}
-.proj-content-div .modal .btn-next:hover{box-shadow:3px 3px #000;}
-.proj-content-div .modal .btn-close-modal{background-color:var(--footer-color);border-radius:0;color:#000;}
-.proj-content-div .modal .btn-close-modal:hover{box-shadow:3px 3px #000;}
 
 .footer-div{padding:10px 0;background-color:var(--footer-color);margin-top:125px;}
 
