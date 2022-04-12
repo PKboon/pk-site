@@ -1,5 +1,17 @@
 <template>
 <div>
+  <div class="wrapper-alert-div">
+    <div tabindex="-1" class="alert alert-success alert-dismissible fade show position-fixed" v-show="emailSent" role="alert">
+      Thank you for your message, {{ nameCont }}! I will get back to you ASAP ;)
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" @click="emailSent=false"></button>
+    </div>
+
+    <div tabindex="-1" class="alert alert-warning alert-dismissible fade show position-fixed" v-show="error" role="alert">
+      Please enter your Name, Email, and Message.
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" @click="error=false"></button>
+    </div>
+  </div>
+
   <div class="nav-div d-flex position-fixed">
     <div>
       <a href="#home"><span class="logo font-bold font-size-48">PK</span></a>
@@ -108,6 +120,7 @@
     <div id="projContentWrapperId">
       <div id="projContentId">
         <div class="font-bold font-size-48">Projects</div>
+        <div class="font-size-18">Please click/tap the thumbnails for more information.</div>
         <div class="proj-content-div">
           <div class="row">
             <div class="col-lg-3 col-md-4 col-sm-6 col-6">
@@ -288,8 +301,8 @@
                     </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-close-modal" data-bs-dismiss="modal">Close</button>
-                      <button class="btn btn-next" data-bs-target="#iwtModal" data-bs-toggle="modal" data-bs-dismiss="modal">
-                        Next:: I Want To
+                      <button class="btn btn-next" data-bs-target="#myaModal" data-bs-toggle="modal" data-bs-dismiss="modal">
+                        First:: MyArt Studio
                       </button>
                     </div>
                   </div>
@@ -306,6 +319,7 @@
     <div id="artsContentWrapperId">
       <div id="artsContentId">
         <div class="font-bold font-size-48">Arts</div>
+        <div class="font-size-18">Please click/tap the thumbnails for more information.</div>
         <div class="arts-content-div">
           <div class="row">
             <div class="col-lg-3 col-md-4 col-sm-6 col-6">
@@ -322,11 +336,11 @@
                       <img class="screenshot-img" src="./assets/projects/iwt-poster.jpeg" />
                       <callout title="Synopsis" body="In a psychology interview, Pin and Pie, two girls that used to be friend, had revealed their complicated relationship."></callout>
                       <h5>About</h5>
+                      This is my last movie. Please feel free to enjoy it. The link is in the <span class="text-success">green badge</span> above.
+                      <br/><br/>
                       This is my thesis movie when I was a film student at Silpakorn University, Thailand.
                       It was really fun to make this movie from the beginning to the end.
                       I am very grateful for my crew, actresses, actors, and advisors.
-                      <br/><br/>
-                      This is my last movie. Please feel free to enjot it. The link is in the <span class="text-success">green badge</span> above.
                       <br/><br/>
                       <img class="screenshot-img" src="./assets/projects/iwt-cap.png" />
                       <br/><br/>
@@ -574,20 +588,20 @@
             <span class="cont-arrows-span"><img src="./assets/bullet.png" /> <img src="./assets/bullet.png" /> <img src="./assets/bullet.png" /></span>
           </div>
           <div class="input-cont-div">
-            <form action="https://formspree.io/f/xzbklkjg" method="POST">
+            <form ref="form" @submit.prevent="sendEmail">
               <div class="form-floating">
-                <input type="text" class="form-control" id="floatingName" placeholder="Name" v-model="nameCont">
+                <input type="text" name="name" class="form-control" id="floatingName" placeholder="Name" v-model="nameCont">
                 <label for="floatingName">Name</label>
               </div>
               <div class="form-floating">
-                <input type="email" class="form-control" id="floatingEmail" placeholder="Email" v-model="emailCont">
+                <input type="email" name="email" class="form-control" id="floatingEmail" placeholder="Email" v-model="emailCont">
                 <label for="floatingEmail">Email</label>
               </div>
               <div class="form-floating">
-                <textarea class="form-control" placeholder="Message" id="floatingMessage" style="height:240px" v-model="msgCont"></textarea>
+                <textarea name="message" class="form-control" placeholder="Message" id="floatingMessage" style="height:240px" v-model="msgCont"></textarea>
                 <label for="floatingMessage">Message</label>
               </div>
-              <button class="btn font-size-24" @click="send($event)">Send</button>
+              <input role="button" class="btn font-size-24" type="submit" value="Send">
             </form>
           </div>
         </div>
@@ -603,6 +617,7 @@
 <script>
 import Experience from './components/Experience.vue'
 import Callout from './components/Callout.vue'
+import emailjs from '@emailjs/browser';
 
 export default {
   name: 'App',
@@ -615,6 +630,8 @@ export default {
       nameCont: '',
       emailCont: '',
       msgCont: '',
+      emailSent: false,
+      error: false,
 
       exprRadio: 'plum',
       plumExpr: [{
@@ -666,36 +683,21 @@ export default {
     }
   },
   methods: {
-    send(event) {
-      let sent = false
-      if (this.nameCont.length <= 0) {
-        event.preventDefault()
-        alert('No name? :(')
-        sent = false
+    sendEmail() {
+      this.error = false
+      this.emailSent = false
+      if(this.nameCont.length === 0 || this.emailCont.length === 0 || this.msgCont.trim().length === 0) {
+        this.error = true
       } else {
-        sent = true
-      }
-
-      if (this.emailCont.length <= 0 || !this.emailCont.includes('@') || !this.emailCont.includes('.')) {
-        event.preventDefault()
-        alert('No email? :(')
-        sent = false
-      } else {
-        sent = true
-      }
-
-      if (this.msgCont.length <= 0) {
-        event.preventDefault()
-        alert("Aw. Empty message? :'(")
-        sent = false
-      } else {
-        sent = true
-      }
-
-      if (sent) {
-        this.nameCont = ''
-        this.emailCont = ''
-        this.msgCont = ''
+        emailjs.sendForm('service_f27y9d5', 'template_n7b33op', this.$refs.form, 'M8svvY6gHDd5xEPu-')
+          .then(() => {
+            this.nameCont = ''
+            this.emailCont = ''
+            this.msgCont = ''
+            this.emailSent = true
+          }, (error) => {
+              console.log('FAILED...', error.text);
+          })
       }
     },
     setPaddingTopHomeSection() {
@@ -794,6 +796,8 @@ ul li ul li{padding-left:1.5rem;background-image:url(./assets/subBullet.png);bac
 input[type="radio"]{display:none;}
 input[type="radio"]:checked+label{color: var(--red);}
 
+.alert{width:calc(100% - 10px);margin:5px;z-index:5;border-radius:0;text-align:center;}
+
 .nav-div{width:100%;padding:10px 0 30px 25px;z-index:2;align-items:center;background: rgb(254,246,246);background: linear-gradient(180deg, rgba(254,246,246,1) 60%, rgba(254,246,246,0) 100%);}
 .nav-menu-div{align-items:center;display: flex;margin-top: -25px;}
 .logo{color:var(--red);text-shadow:2px 2px black;margin-right:30px;}
@@ -817,6 +821,8 @@ input[type="radio"]:checked+label{color: var(--red);}
 .company-list li{white-space: nowrap;}
 .company-list label:hover{cursor: pointer;}
 
+.img-button-desc{position:absolute;z-index:3;top:0;}
+
 .arts-content-div ul{padding-left:0;}
 .arts-content-div .row>*, .proj-content-div .row>*{padding:0;}
 .arts-content-div .row .col-6, .proj-content-div .row .col-6{margin-top:20px;}
@@ -833,8 +839,8 @@ input[type="radio"]:checked+label{color: var(--red);}
 .sub-cont-content-div{white-space:nowrap;padding-top:10px;}
 .cont-arrows-span{position:relative;top:-3px;margin-left:10px;}
 .input-cont-div{width:100%;padding-left:30px;}
-.input-cont-div .form-floating .form-control{width:100%;border-radius:0;border:3px #000 solid;margin-bottom:20px;color:var(--red);}
-.input-cont-div .form-floating .form-control:focus, .input-cont-div .form-floating .form-control:hover{box-shadow:5px 5px var(--red);}
+.input-cont-div .form-floating .form-control{width:100%;border-radius:0;border:3px #000 solid;margin-bottom:20px;}
+.input-cont-div .form-floating .form-control:focus, .input-cont-div .form-floating .form-control:hover{box-shadow:5px 5px var(--red);color:var(--red);}
 .input-cont-div .btn{background-color:var(--red);width:100%;border-radius:0;padding:10px 0;color:#fff;}
 .input-cont-div .btn:hover{box-shadow:5px 5px #000;}
 
