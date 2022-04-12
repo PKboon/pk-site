@@ -2,7 +2,7 @@
 <div>
   <div class="wrapper-alert-div">
     <div tabindex="-1" class="alert alert-success alert-dismissible fade show position-fixed" v-show="emailSent" role="alert">
-      Thank you for your message, {{ nameCont }}! I will get back to you ASAP ;)
+      Thank you for your message, {{ name }}! I will get back to you ASAP ;)
       <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" @click="emailSent=false"></button>
     </div>
 
@@ -627,6 +627,7 @@ export default {
   },
   data() {
     return {
+      name: '',
       nameCont: '',
       emailCont: '',
       msgCont: '',
@@ -684,6 +685,7 @@ export default {
   },
   methods: {
     sendEmail() {
+      this.name = this.nameCont
       this.error = false
       this.emailSent = false
       if(this.nameCont.length === 0 || this.emailCont.length === 0 || this.msgCont.trim().length === 0) {
