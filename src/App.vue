@@ -640,7 +640,7 @@ export default {
           company: 'Plum Voice',
           companyWeb: 'https://www.plumvoice.com/',
           location: 'Boston, MA (Hybrid)',
-          period: 'Jan 2022 - Present',
+          period: 'Jan - Apr 2022',
           tasks: ['Design web apps with Figma.', 'Develop web apps’ front-end with Laravel, Vue,js, Vue Router and Bootstrap.', 'Integrate MySQL to PHP and JS by using Axios to create authentication system.',
             'Work with developer team to run QA tests.', 'Performed as a team member of an Agile team.'
           ]
