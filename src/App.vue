@@ -60,24 +60,28 @@
             <img class="about-img" src="./assets/pk.jpeg" />
           </div>
           <div class="col-lg-8">
-            <p>I’m a Software Engineer Intern at <a href="https://www.plumvoice.com/" target="_blank" style="white-space:nowrap;">Plum Voice</a> in Boston, MA.</p>
+            <p>I’m a <span class="fst-italic">Junior Front End Web Developer</span> at <a href="https://www.plumvoice.com/" target="_blank" style="white-space:nowrap;">Plum Voice</a> in Boston, MA.</p>
             <ul>
               <li class="main-bullet">
-                Languages, Frameworks, Libraries
+                Programming
                 <ul>
-                  <li>CSS, HTML, JavaScript, MySQL, Php</li>
-                  <li>Laravel, Vue.js</li>
-                  <li>Axios, Bootstrap</li>
+                  <li v-for="(p, i) in about.programming" :key="i">{{ p }}</li>
                 </ul>
               </li>
             </ul>
             <ul>
               <li>
-                Software, Tools
+                Software
                 <ul>
-                  <li>Atom, DBeaver, GitHub, PhpStorm, Postman, VSCode</li>
-                  <li>Figma, Illustrator, Photoshop</li>
-                  <li>Clickup, Slack, Google Meet</li>
+                  <li v-for="(s, i) in about.software" :key="i">{{ s }}</li>
+                </ul>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                Operation System
+                <ul>
+                  <li v-for="(o, i) in about.os" :key="i">{{ o }}</li>
                 </ul>
               </li>
             </ul>
@@ -96,20 +100,21 @@
             <ul class="nav font-size-24">
               <li class="nav-link"><input type="radio" id="plumExprId" value="plum" v-model="exprRadio" /><label for="plumExprId">Plum Voice</label></li>
               <li class="nav-link"><input type="radio" id="chimExprId" value="chim" v-model="exprRadio" /><label for="chimExprId">Chim Media</label></li>
-              <li class="nav-link"><input type="radio" id="frlnExprId" value="frln" v-model="exprRadio" /><label for="frlnExprId">Freelance</label></li>
+              <!-- <li class="nav-link"><input type="radio" id="frlnExprId" value="frln" v-model="exprRadio" /><label for="frlnExprId">Freelance</label></li> -->
             </ul>
           </div>
           <hr class="expr-line" />
           <div class="expr-detail-div">
             <div v-if="exprRadio === 'plum'">
-              <experience :key="plumExprIndex" v-for="(expr, plumExprIndex) in plumExpr" :position=expr.position :company=expr.company :companyWeb=expr.companyWeb :location=expr.location :period=expr.period :tasks=expr.tasks />
+              <experience :key="plumExprIndex2" v-for="(expr, plumExprIndex2) in plumExpr2" :position=expr.position :company=expr.company :companyWeb=expr.companyWeb :location=expr.location :period=expr.period :tasks=expr.tasks />
+              <experience :key="plumExprIndex" v-for="(expr, plumExprIndex) in plumExpr" :position=expr.position :period=expr.period :tasks=expr.tasks />
             </div>
             <div v-else-if="exprRadio === 'chim'">
               <experience :position=chimExpr[0].position :company=chimExpr[0].company :companyWeb=chimExpr[0].companyWeb :location=chimExpr[0].location :period=chimExpr[0].period :tasks=chimExpr[0].tasks />
             </div>
-            <div v-if="exprRadio === 'frln'">
+            <!-- <div v-if="exprRadio === 'frln'">
               <experience :key="frlnExprIndex" v-for="(expr, frlnExprIndex) in frlnExpr" :position=expr.position :company=expr.company :companyWeb=expr.companyWeb :location=expr.location :period=expr.period :tasks=expr.tasks />
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -634,21 +639,44 @@ export default {
       emailSent: false,
       error: false,
 
+      about: {
+        programming:['JavaScript (Vue.js/Angular.js), CSS (Bootstrap), HTML', 'PHP (Laravel), MySQL', 'VXML'],
+        software:['Git, GitHub, Atom, PhpStorm, Postman, DBeaver, Firebase', 'Figma, Photoshop, Illustrator', 'Lucidchart, Slack, Trello, ClickUp, Zoom, Google Drive, Google Meet'],
+        os:['iOS', 'Windows']
+      },
+    
+
       exprRadio: 'plum',
-      plumExpr: [{
-          position: 'Software Engineer Intern',
+      plumExpr2: [{
+          position: 'Junior Front End Web Developer ',
           company: 'Plum Voice',
           companyWeb: 'https://www.plumvoice.com/',
           location: 'Boston, MA (Hybrid)',
+          period: 'Sep 2022 - Present',
+          tasks: [
+            'Update and maintain web apps with Figma, Vue.js, Angular.js, and/or Laravel.',
+            'Keep the documentation of each assigned project up to date.'
+          ]
+        }
+      ],
+      plumExpr: [{
+          position: 'Software Engineer Intern',
           period: 'Jan - Apr 2022',
-          tasks: ['Designed web apps with Figma.', 'Developed web apps’ front-end with Laravel, Vue,js, Vue Router and Bootstrap.', 'Integrated MySQL to PHP and JS by using Axios to create authentication system.',
-            'Worked with developer team to run QA tests.', 'Performed as a team member of an Agile team.'
+          tasks: [
+            'Designed Plum Voice’s internal tool web app with Figma.',
+            'Developed the internal tool web app with MySQL, Laravel, Vue,js, Axios and Bootstrap.',
+            'Built an SMS Bot by connecting Google’s Dialogflow to an SMS application.',
+            'Used Angular.js to develop an existing product.',
+            'Documented the projects in the README.md files, Google Docs, and/or Lucidchart.'
           ]
         },
         {
           period: 'May - Aug 2021',
-          tasks: ['Completed beta version of a web app product by using PHP, MySQL, HTML, CSS and Bootstrap.', 'Created an SMS Application with Plum SMS APIs and PHP.',
-            'Implemented a real-time web app with developer team, by using Vue.js, CSS, and Bootstrap.', 'Generated VXML applications using Stripe APIs and PHP.', 'Performed as a team member of an Agile team.'
+          tasks: [
+            'Completed beta version of a web app product by using PHP, MySQL, HTML, and Bootstrap.',
+            'Created an SMS Application with Plum SMS APIs and PHP.',
+            'Implemented a real-time web app with the developer team, by using Vue.js and Bootstrap.',
+            'Generated VXML applications using Stripe APIs and PHP.'
           ]
         }
       ],
@@ -662,23 +690,28 @@ export default {
           'Implemented 7 responsive websites using Bootstrap and React.js with the team.'
         ]
       }],
-      frlnExpr: [{
-          position: 'Web Developer',
-          company: 'MyArt Studio',
-          companyWeb: 'https://twitter.com/myart_my',
-          location: 'Chiang Mai, Thailand (Remote)',
-          period: 'Dec 2021 - Present',
-          tasks: ['Develop a printing service website using Vue.js and Vue Router.', 'Work with a UI/UX designer on the website design.']
-        },
-        {
-          position: 'Newsletter Designer & Developer',
-          company: 'Diversion',
-          companyWeb: 'https://www.diversion-th.com/',
-          location: 'Bangkok, Thailand (Remote)',
-          period: 'Dec 2021 - Jan 2022',
-          tasks: ['Designed wireframes and newsletters in Illustrator and Photoshop.', 'Developed the newsletter in HTML and CSS using Atom.', 'Recorded a video on how to use it as a template in Gmail for the client.']
-        }
-      ],
+      // frlnExpr: [{
+      //     position: 'Web Developer',
+      //     company: 'MyArt Studio',
+      //     companyWeb: 'https://twitter.com/myart_my',
+      //     location: 'Chiang Mai, Thailand (Remote)',
+      //     period: 'Dec 2021 - Present',
+      //     tasks: ['Develop a printing service website using Vue.js and Vue Router.', 'Work with a UI/UX designer on the website design.']
+      //   },
+      //   {
+      //     position: 'Newsletter Designer & Developer',
+      //     company: 'Diversion',
+      //     companyWeb: 'https://www.diversion-th.com/',
+      //     location: 'Bangkok, Thailand (Remote)',
+      //     period: 'Dec 2021 - Jan 2022',
+      //     tasks: [
+      //       'Led a group of 5 developers and 2 UX/UI designers to create static websites.',
+      //       'Adopted Agile to the team.',
+      //       'Implemented 7 responsive websites with the team by using React.js and Bootstrap.',
+      //       'Collaborated with Marketing and Media teams to create the websites.'
+      //     ]
+      //   }
+      // ],
 
       projectPics: ['rnf.png', 'tte.png', 'dvs.png', 'dt.png']
     }
