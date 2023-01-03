@@ -61,7 +61,7 @@
           </div>
           <div class="col-lg-8">
             <p>I’m a <span class="font-bold">Junior Front End Web Developer</span> at <a href="https://www.plumvoice.com/" target="_blank" style="white-space:nowrap;">Plum Voice</a> in Boston, MA.</p>
-            <ul>
+            <ul class="mt-1" style="margin-left:-2.25rem">
               <li class="main-bullet">
                 Programming
                 <ul>
@@ -69,7 +69,7 @@
                 </ul>
               </li>
             </ul>
-            <ul>
+            <ul style="margin-left:-2.25rem">
               <li>
                 Software
                 <ul>
@@ -77,7 +77,7 @@
                 </ul>
               </li>
             </ul>
-            <ul>
+            <ul style="margin-left:-2.25rem">
               <li>
                 Operation System
                 <ul>
