@@ -71,7 +71,7 @@
             </ul>
             <ul style="margin-left:-2.25rem">
               <li>
-                Software
+                Softwar
                 <ul>
                   <li v-for="(s, i) in about.software" :key="i">{{ s }}</li>
                 </ul>
