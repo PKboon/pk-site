@@ -60,7 +60,7 @@
             <img class="about-img" src="./assets/pk.jpeg" />
           </div>
           <div class="col-lg-8">
-            <p>I’m a <span class="fst-italic">Junior Front End Web Developer</span> at <a href="https://www.plumvoice.com/" target="_blank" style="white-space:nowrap;">Plum Voice</a> in Boston, MA.</p>
+            <p>I’m a <span class="font-bold">Junior Front End Web Developer</span> at <a href="https://www.plumvoice.com/" target="_blank" style="white-space:nowrap;">Plum Voice</a> in Boston, MA.</p>
             <ul>
               <li class="main-bullet">
                 Programming
